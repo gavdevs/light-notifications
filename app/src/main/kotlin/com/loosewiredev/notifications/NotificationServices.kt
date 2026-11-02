@@ -1,4 +1,4 @@
-package com.gavyn.notifications
+package com.loosewiredev.notifications
 
 import com.thelightphone.sdk.SealedLightContext
 import com.thelightphone.sdk.apps.LightNotifications

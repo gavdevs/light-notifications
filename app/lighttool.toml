@@ -1,5 +1,5 @@
 [tool]
-id = "com.gavyn.notifications"
+id = "com.loosewiredev.notifications"
 label = "Notifications"
 versionCode = 1
 versionName = "0.1.0"

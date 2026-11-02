@@ -1,4 +1,4 @@
-package com.gavyn.notifications.data
+package com.loosewiredev.notifications.data
 
 import com.thelightphone.sdk.apps.LightNotification
 

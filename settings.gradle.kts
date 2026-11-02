@@ -21,6 +21,11 @@ dependencyResolutionManagement {
 rootProject.name = "light-notifications"
 
 include(":app")
+// Not "app": a module literally named `server` is skipped by the Light SDK
+// plugin's source scan, manifest check and dependency allowlist, which is the
+// only place an AccessibilityService and an overlay permission can be
+// declared. Everything privileged lives here; nothing of it sits in :app.
+include(":server")
 
 // Consume the Light SDK as an adjacent composite build, matching the other
 // tools in this tree. Override with -Pnotifications.sdkPath=/path/to/light-sdk.

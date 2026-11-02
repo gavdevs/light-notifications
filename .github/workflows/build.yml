@@ -47,7 +47,9 @@ jobs:
 
       - name: Run tests, lint, and build debug APK
         working-directory: light-notifications
-        run: ./gradlew :app:testDebugUnitTest :app:lintDebug :app:assembleDebug
+        run: |
+          ./gradlew :app:testDebugUnitTest :app:lintDebug :app:assembleDebug \
+            :server:testDebugUnitTest :server:lintDebug
 
       - name: Upload debug APK
         uses: actions/upload-artifact@v4
@@ -61,5 +63,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: light-notifications-lint
-          path: light-notifications/app/build/reports/lint-results-debug.html
+          path: |
+            light-notifications/app/build/reports/lint-results-debug.html
+            light-notifications/server/build/reports/lint-results-debug.html
           if-no-files-found: ignore

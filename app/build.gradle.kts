@@ -84,6 +84,11 @@ kotlin {
 dependencies {
     implementation(libs.sdk.client)
 
+    // The swipe-down service and its overlay. Merged into this APK but never
+    // scanned by the SDK plugin, which is what lets it exist at all.
+    debugRuntimeOnly(project(":server"))
+    releaseRuntimeOnly(project(":server"))
+
     testImplementation(libs.kotlin.test)
     testImplementation(libs.kotlinx.coroutines.test)
 }
