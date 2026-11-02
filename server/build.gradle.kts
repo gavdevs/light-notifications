@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.gavyn.notifications.server"
+    namespace = "com.loosewire.notifications.server"
     compileSdk = 36
 
     defaultConfig {

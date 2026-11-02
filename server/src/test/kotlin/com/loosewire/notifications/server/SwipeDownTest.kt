@@ -1,4 +1,4 @@
-package com.gavyn.notifications.server
+package com.loosewire.notifications.server
 
 import kotlin.test.Test
 import kotlin.test.assertEquals
@@ -105,7 +105,7 @@ class SwipeDownTest {
         assertTrue(isHomePackage("com.lightos"))
         assertTrue(isHomePackage("com.lightos.launcher"))
         assertTrue(isHomePackage("com.thelightphone.sdk.emulator"))
-        assertFalse(isHomePackage("com.gavyn.notifications"))
+        assertFalse(isHomePackage("com.loosewire.notifications"))
         assertFalse(isHomePackage("app.lightphonekeyboard"))
         // The bug the predicate exists for: a Light-looking id is not the toolbox.
         assertFalse(isHomePackage("com.lightphone.spotify"))

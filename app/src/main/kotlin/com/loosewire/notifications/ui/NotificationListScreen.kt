@@ -1,4 +1,4 @@
-package com.loosewiredev.notifications.ui
+package com.loosewire.notifications.ui
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -20,9 +20,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.lifecycle.viewModelScope
-import com.loosewiredev.notifications.NotificationServices
-import com.loosewiredev.notifications.data.NotificationList
-import com.loosewiredev.notifications.data.NotificationListState
+import com.loosewire.notifications.NotificationServices
+import com.loosewire.notifications.data.NotificationList
+import com.loosewire.notifications.data.NotificationListState
 import com.thelightphone.sdk.InitialScreen
 import com.thelightphone.sdk.LightScreen
 import com.thelightphone.sdk.LightViewModel

@@ -1,4 +1,4 @@
-package com.loosewiredev.notifications
+package com.loosewire.notifications
 
 import com.thelightphone.sdk.SealedLightContext
 import com.thelightphone.sdk.apps.LightNotifications

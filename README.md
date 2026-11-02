@@ -48,7 +48,7 @@ Two grants are needed, once, over adb:
 ```sh
 # Lets the swipe start this app from the background. Without it Android drops the
 # launch silently: the swipe animates and opens nothing.
-adb shell appops set com.loosewiredev.notifications SYSTEM_ALERT_WINDOW allow
+adb shell appops set com.loosewire.notifications SYSTEM_ALERT_WINDOW allow
 
 # Enables the service. Settings > Accessibility also works, but LightOS ships no
 # screen for it, so this is the shorter path. Written as one shell so it appends to
@@ -57,13 +57,13 @@ adb shell appops set com.loosewiredev.notifications SYSTEM_ALERT_WINDOW allow
 adb shell sh -c 'cur=$(settings get secure enabled_accessibility_services); \
   if [ -z "$cur" ] || [ "$cur" = null ]; then \
     settings put secure enabled_accessibility_services \
-      com.loosewiredev.notifications/com.loosewiredev.notifications.server.SwipeDownService; \
+      com.loosewire.notifications/com.loosewire.notifications.server.SwipeDownService; \
   else settings put secure enabled_accessibility_services \
-      "$cur:com.loosewiredev.notifications/com.loosewiredev.notifications.server.SwipeDownService"; fi; \
+      "$cur:com.loosewire.notifications/com.loosewire.notifications.server.SwipeDownService"; fi; \
   settings put secure accessibility_enabled 1'
 ```
 
-Leave the app out of it with `adb shell appops set com.loosewiredev.notifications
+Leave the app out of it with `adb shell appops set com.loosewire.notifications
 SYSTEM_ALERT_WINDOW deny` and the service stands down on its own; it checks the
 grant before drawing anything rather than animating a swipe that cannot fire.
 

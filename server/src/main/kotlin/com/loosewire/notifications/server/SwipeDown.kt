@@ -1,4 +1,4 @@
-package com.gavyn.notifications.server
+package com.loosewire.notifications.server
 
 import kotlin.math.abs
 

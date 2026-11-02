@@ -16,7 +16,7 @@
          so without this grant a swipe would animate and open nothing. LightOS
          ships no screen that grants it, so it is set once over adb:
 
-           adb shell appops set com.gavyn.notifications SYSTEM_ALERT_WINDOW allow -->
+           adb shell appops set com.loosewire.notifications SYSTEM_ALERT_WINDOW allow -->
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
     <application>

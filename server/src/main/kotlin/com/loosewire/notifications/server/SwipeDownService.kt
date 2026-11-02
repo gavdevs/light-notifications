@@ -1,4 +1,4 @@
-package com.gavyn.notifications.server
+package com.loosewire.notifications.server
 
 import android.accessibilityservice.AccessibilityService
 import android.content.Intent
@@ -55,7 +55,7 @@ class SwipeDownService : AccessibilityService() {
         const val TAG = "SwipeDownService"
 
         /** This tool's own activity, which the SDK generates from `lighttool.toml`'s `id`. */
-        const val TARGET = "com.gavyn.notifications"
+        const val TARGET = "com.loosewire.notifications"
         const val TARGET_ACTIVITY = "com.thelightphone.sdk.LightActivity"
 
         const val STRIP_HEIGHT_DP = 56f
